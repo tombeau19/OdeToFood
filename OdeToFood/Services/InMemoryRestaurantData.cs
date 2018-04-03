@@ -22,6 +22,11 @@ namespace OdeToFood.Services
             return _restaurants;
         }
 
+        public Restaurant Get(int id)
+        {
+            return _restaurants.Find((r) => r.Id == id);
+        }
+
         List<Restaurant> _restaurants;
     }
 }
