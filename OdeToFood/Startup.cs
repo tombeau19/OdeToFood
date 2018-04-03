@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
+using OdeToFood.Services;
 
 namespace OdeToFood
 {
@@ -20,6 +21,7 @@ namespace OdeToFood
         {
             services.AddSingleton<IGreeter, Greeter>();
             services.AddMvc();
+            services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
