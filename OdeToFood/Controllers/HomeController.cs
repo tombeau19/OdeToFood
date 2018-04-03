@@ -1,13 +1,18 @@
 ﻿using System;
-
+using Microsoft.AspNetCore.Mvc;
+using OdeToFood.Models;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 namespace OdeToFood.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello from the home controller";
+
+            var model = new Restaurant { Id = 1, Name = "Tommy's Spot BABAYY" };
+
+            return View(model);
         }
     }
 }
