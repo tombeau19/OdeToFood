@@ -5,13 +5,12 @@
 <h1>Create</h1>
 
 <form method="post">
-
-    <input type="text" name="Name" value="" />
-    <select data-val="true" data-val-required="The Cuisine field is required." id="Cuisine" name="Cuisine">
-        <option value="0">None</option>
-        <option value="1">Italian</option>
-        <option value="2">French</option>
-        <option value="3">German</option>
+    <div>
+        <label asp-for="Name" />
+        <input asp-for="Name" />
+    </div>
+    <select asp-for="Cuisine"
+            asp-items="@Html.GetEnumSelectList<CuisineType>()">
     </select>
     <input type="submit" name="save" value="Save" />
 

@@ -21,12 +21,12 @@ namespace OdeToFood.Services
 
         public IEnumerable<Restaurant> GetAll()
         {
-            return _restaurants;
+            return _restaurants.OrderBy(r => r.Name);
         }
 
         public Restaurant Get(int id)
         {
-            return _restaurants.Find((r) => r.Id == id);
+            return _restaurants.FirstOrDefault(r => r.Id == id);
         }
 
         public Restaurant Add(Restaurant restaurant)
