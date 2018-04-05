@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood", "OdeToFood\OdeToFood.csproj", "{D774F601-D1F4-4E83-AE73-F54531FB822F}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{978C0886-DD5B-4C32-B659-E0EE3BD1F985}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{D774F601-D1F4-4E83-AE73-F54531FB822F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D774F601-D1F4-4E83-AE73-F54531FB822F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D774F601-D1F4-4E83-AE73-F54531FB822F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978C0886-DD5B-4C32-B659-E0EE3BD1F985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978C0886-DD5B-4C32-B659-E0EE3BD1F985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978C0886-DD5B-4C32-B659-E0EE3BD1F985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978C0886-DD5B-4C32-B659-E0EE3BD1F985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
